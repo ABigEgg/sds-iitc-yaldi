@@ -1,0 +1,179 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  /* 
+  TASK 2
+  
+  Change this font to 'Impact' or 'Georgia'
+  
+  Like this: 
+  font-family: 'Georgia';
+  */
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 20px;
+  margin: auto
+}
+
+header {
+  display: flex;
+}
+
+.logo h1 {
+  background-image: url(http://digitalskillseducation.com/sdsiitc/logo.png);
+  background-size: contain;
+  height: 100px;
+  text-indent: -999999px;
+  background-repeat: no-repeat;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header div,
+header nav {
+  flex: 1;
+}
+
+header nav {
+  flex-grow: 2;
+}
+
+header nav ul {
+  list-style-type: none;
+  float: right;
+}
+
+header nav ul li {
+  float: right;
+  margin-left: 10px;
+}
+
+.masthead {
+  height: 500px;
+}
+
+.masthead img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.masthead {
+  position: relative;
+}
+
+.masthead .inner {
+  /* Centre the CTA button vertically and horizontally.
+  For more more info see https://css-tricks.com/centering-css-complete-guide/ */
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+  position: absolute;
+  text-align: center;
+}
+
+.masthead h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.masthead .cta {  
+  /** Task 3 
+  Change the background and text colours of this button.
+  
+  Like this:
+    background: red;
+    color: yellow;
+  or 
+    background: purple;
+    color: white;
+  **/
+  background: yellow;
+  color: black;
+
+  /* Here we set the font size, style and the button's padding */
+  font-size: 18px;
+  text-decoration: none;
+  padding: 20px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.images {
+  display: flex;
+  margin-top: 20px;
+}
+
+.images .image {
+  flex: 1;
+}
+
+.images .image img {
+  width: 100%;
+}
+
+.images .image:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.contact-and-images {
+  display: flex;
+}
+
+.contact-and-images .contact,
+.contact-and-images .images-grid {
+  flex: 1
+}
+
+.contact form {
+  padding-right: 100px;
+}
+
+.contact label {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contact input,
+.contact textarea {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.images-grid {
+
+}
+
+.images-grid img {
+  width: 50%;
+  float: left;
+  height: 250px;
+  padding: 10px;
+  object-fit: cover;
+}
+
+footer {
+  background: #000;
+}
+
+footer.inner {
+  padding: 20px;
+  display: flex;
+}
+
+footer p {
+  color: #fff;
+  flex: 1;
+}
